@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Linkedin, Mail, FileDown, FlaskConical, Rocket, GraduationCap } from "lucide-react";
+import { Linkedin, Mail, FileDown, FlaskConical, Rocket, GraduationCap } from "lucide-react";
 
 const PROJECTS = [
   {
@@ -45,16 +45,17 @@ export default function PersonalSite() {
     <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white text-slate-900">
       {/* Top Nav */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b">
-        <nav className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <a href="#home" className="font-semibold text-lg">Rika • Chemical Engineering</a>
+         <nav className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-end">
           <div className="hidden sm:flex items-center gap-4">
             <a href="#about" className="hover:text-indigo-600">About</a>
             <a href="#projects" className="hover:text-indigo-600">Projects</a>
             <a href="#experience" className="hover:text-indigo-600">Experience</a>
             <a href="#contact" className="hover:text-indigo-600">Contact</a>
             <Button asChild className="ml-2">
-              <a href="#resume" aria-label="Download resume"><FileDown className="mr-2 h-4 w-4"/>Resume</a>
-            </Button>
+  	<a href="/Rika_Resume.pdf" aria-label="Open resume" target="_blank" rel="noreferrer">
+    	<FileDown className="mr-2 h-4 w-4"/>Resume
+  	</a>
+	</Button>
           </div>
         </nav>
       </header>
@@ -66,12 +67,11 @@ export default function PersonalSite() {
             <p className="text-sm uppercase tracking-widest text-indigo-600 font-medium">Hello, I'm</p>
             <h1 className="mt-2 text-4xl sm:text-5xl font-bold leading-tight">Rika Yo — aspiring engineer</h1>
             <p className="mt-4 text-slate-600 max-w-prose">
-              I recently graduated as a Chemical Engineering major from UCSD.
+              I recently graduated as a Chemical Engineering major from UCSD, currently looking for exciting opportunities. Resume and LinkedIn page don't describe me well, thus this website.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild variant="default"><a href="#projects">See Projects</a></Button>
               <Button asChild variant="secondary"><a href="#contact">Get in Touch</a></Button>
-              <Button asChild variant="ghost"><a href="https://github.com/your_github" target="_blank" rel="noreferrer"><Github className="h-4 w-4 mr-2"/>GitHub</a></Button>
               <Button asChild variant="ghost"><a href="https://www.linkedin.com/in/rikayo" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4 mr-2"/>LinkedIn</a></Button>
             </div>
           </motion.div>
@@ -99,7 +99,7 @@ export default function PersonalSite() {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="md:col-span-2">
             <p className="text-slate-700 leading-relaxed">
-              👉 Short bio: born in Japan, grew up across China & New Zealand, now in California.
+              👉 Short bio: Born in Japan, primary school in China, middle school in Japan, high school in New Zealand. 
               I enjoy turning messy systems into clean models and readable visuals. Interests span
               semiconductor manufacturing, clean energy, and process optimization.
             </p>
@@ -196,7 +196,6 @@ export default function PersonalSite() {
             </div>
           </form>
           <div className="mt-6 flex gap-3">
-            <Button asChild variant="ghost"><a href="https://github.com/your_github" target="_blank" rel="noreferrer"><Github className="h-4 w-4 mr-2"/>GitHub</a></Button>
             <Button asChild variant="ghost"><a href="https://www.linkedin.com/in/rikayo" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4 mr-2"/>LinkedIn</a></Button>
           </div>
         </div>
@@ -209,11 +208,6 @@ export default function PersonalSite() {
           <a href="#home" className="hover:text-indigo-600">Back to top ↑</a>
         </div>
       </footer>
-
-      {/* Hidden resume anchor */}
-      <a id="resume" href="/Rika_Resume.pdf" className="hidden" aria-hidden>
-        Resume
-      </a>
     </div>
   );
 }
