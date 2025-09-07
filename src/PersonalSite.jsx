@@ -64,17 +64,15 @@ export default function PersonalSite() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-sm uppercase tracking-widest text-indigo-600 font-medium">Hello, I'm</p>
-            <h1 className="mt-2 text-4xl sm:text-5xl font-bold leading-tight">Rika — aspiring process & manufacturing engineer</h1>
+            <h1 className="mt-2 text-4xl sm:text-5xl font-bold leading-tight">Rika Yo — aspiring engineer</h1>
             <p className="mt-4 text-slate-600 max-w-prose">
-              👉 Replace this: I'm a senior Chemical Engineering student at UCSD with hands-on
-              experience across process design, fuel cells, and semiconductor-adjacent labs. I love
-              building clean systems, neat datasets, and thoughtful UI for technical stories.
+              I recently graduated as a Chemical Engineering major from UCSD.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button asChild variant="default"><a href="#projects">See Projects</a></Button>
               <Button asChild variant="secondary"><a href="#contact">Get in Touch</a></Button>
               <Button asChild variant="ghost"><a href="https://github.com/your_github" target="_blank" rel="noreferrer"><Github className="h-4 w-4 mr-2"/>GitHub</a></Button>
-              <Button asChild variant="ghost"><a href="https://www.linkedin.com/in/your_linkedin" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4 mr-2"/>LinkedIn</a></Button>
+              <Button asChild variant="ghost"><a href="https://www.linkedin.com/in/rikayo" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4 mr-2"/>LinkedIn</a></Button>
             </div>
           </motion.div>
 
@@ -207,7 +205,7 @@ export default function PersonalSite() {
       {/* Footer */}
       <footer className="py-10 border-t">
         <div className="max-w-6xl mx-auto px-6 text-sm text-slate-500 flex items-center justify-between">
-          <span>© {new Date().getFullYear()} Rika. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Rika Yo. All rights reserved.</span>
           <a href="#home" className="hover:text-indigo-600">Back to top ↑</a>
         </div>
       </footer>
