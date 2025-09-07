@@ -197,7 +197,7 @@ export default function PersonalSite() {
           </form>
           <div className="mt-6 flex gap-3">
             <Button asChild variant="ghost"><a href="https://github.com/your_github" target="_blank" rel="noreferrer"><Github className="h-4 w-4 mr-2"/>GitHub</a></Button>
-            <Button asChild variant="ghost"><a href="https://www.linkedin.com/in/your_linkedin" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4 mr-2"/>LinkedIn</a></Button>
+            <Button asChild variant="ghost"><a href="https://www.linkedin.com/in/rikayo" target="_blank" rel="noreferrer"><Linkedin className="h-4 w-4 mr-2"/>LinkedIn</a></Button>
           </div>
         </div>
       </Section>
